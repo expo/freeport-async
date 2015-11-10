@@ -1,4 +1,4 @@
-# freeport
+# freeport-async
 
 Finds an available port for your application to use.
 You can specify a range where to look for an available port.
