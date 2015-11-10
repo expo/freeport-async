@@ -24,5 +24,10 @@ Usage:
 
 ```
 
+Note that this code just finds available ports, but doesn't reserve them in any way.
+This means that if you have other code that might be looking for a port in the same range at the same time, you could run into issues.
+Also, if you call `freeportAsync` twice in a row, it will often return the same port number twice. If you want to find two (or more) ports you can use, you need to call `freeportAsync.rangeAsync(<number-of-ports>, [startSearchFrom])`.
+
+
 See also https://gist.github.com/mikeal/1840641
 
