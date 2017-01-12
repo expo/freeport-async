@@ -7,12 +7,12 @@ function testPortAsync(port) {
     var server = net.createServer()
     server.listen(port, function (err) {
       server.once('close', function () {
-        fulfill(true);
+        setTimeout(() => fulfill(true), 0);
       });
       server.close();
     });
     server.on('error', function (err) {
-      fulfill(false);
+      setTimeout(() => fulfill(false), 0);
     });
   });
 }
