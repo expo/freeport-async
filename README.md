@@ -24,6 +24,10 @@ let freeportAsync = require("freeport-async");
 
 let portIn9000Range = await freeportAsync(9000);
 
+let portAvailableForAnyOrLocalhost = await freeportAsync(9000, {
+  hostnames: [null, "localhost"]
+});
+
 let isPort5000Available = await freeportAsync.availableAsync(5000);
 
 let listOf5ConsecutiveAvailablePorts = await freeportAsync.rangeAsync(5);

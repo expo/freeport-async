@@ -3,6 +3,9 @@
   "version": "1.1.2",
   "description": "Uses mikeal's code to find an open port in a given range",
   "main": "index.js",
+  "engines": {
+    "node": ">=8"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
