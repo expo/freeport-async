@@ -1,7 +1,8 @@
 {
   "name": "freeport-async",
-  "version": "1.1.2",
-  "description": "Uses mikeal's code to find an open port in a given range",
+  "version": "2.0.0",
+  "description": "Finds an available port for your application to use.",
+  "license": "MIT",
   "main": "index.js",
   "engines": {
     "node": ">=8"
@@ -11,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/650Industries/freeport.git"
+    "url": "https://github.com/expo/freeport-async.git"
   },
   "keywords": [
     "port",
@@ -23,11 +24,11 @@
     "networking",
     "mikeal"
   ],
-  "author": "exponent.team@gmail.com",
+  "author": "Expo",
   "bugs": {
-    "url": "https://github.com/650Industries/freeport/issues"
+    "url": "https://github.com/expo/freeport-async/issues"
   },
-  "homepage": "https://gist.github.com/mikeal/1840641",
+  "homepage": "https://github.com/expo/freeport-async/blob/master/README.md",
   "devDependencies": {
     "project-repl": "^1.5.0"
   }
